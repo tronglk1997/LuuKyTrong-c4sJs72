@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mass = Number(prompt("Nhập khối được kg "))
+        let height = Number(prompt(" Nhập chiều cao cm "))
+        let heightM = height/100
+        let BMI = mass / (heightM*heightM)
+        console.log("BMI =",BMI)
+        if( BMI <16){
+            console.log("Thiếu cân nặng")}
+        else if (16<= BMI && BMI < 18.5){
+            console.log("Thiếu cân")}
+        else if ( 18.5<= BMI && BMI <25){
+            console.log("bình thường")}
+        else if ( 25 <= BMI && BMI <30){
+            console.log("Thừa cân")}
+        else{
+            console.log("béo phì")}
+
+
+    </script>
+</body>
+</html>
