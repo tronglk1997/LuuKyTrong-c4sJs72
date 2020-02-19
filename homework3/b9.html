@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let size = 50;
+        const colors = ['red', 'gray', 'blue', 'purple', 'cyan'];
+        for(let i =0 ; i < colors.length ; i++) {
+            for(let j = 0 ; j < 4; j++) {
+                color(colors[i]);
+                fd(size);
+                rt(90);
+            }
+            size += 50;
+        }
+    </script>
+</body>
+</html>
